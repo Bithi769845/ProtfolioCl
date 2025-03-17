@@ -3,213 +3,297 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- <style>
- .nav-link {
-  position: relative;
-  padding-bottom:5px ;
-}
-
-.nav-link::after {
-  content: '';
-  position: absolute;
-  left: 8px;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #17aa23;
-  transition: width 0.3s ease-in-out;
-}
-
-.nav-link:hover::after {
-  width: 80%;
-}
-
-.shadows {
-  box-shadow: 0 4px 6px rgba(19, 202, 50, 0.5) !important; 
-}
-
-.form-control{
-    border: 2px solid rgb(226, 30, 30);
-  border-radius: 8px; 
-}
-.form-select{
-    border: 2px solid #84878D;
-  border-radius: 8px; 
-}
-
-.form-control:focus {
-  box-shadow: 0 0 0 2px #000000cb, 0 0 0 5px #24B77F;
-  border: 3px solid #24B77F; 
-  outline: none;
-  border-radius: 8px; 
-}
-.form-select:focus {
-  box-shadow: 0 0 0 2px #000000cb, 0 0 0 5px #24B77F;
-  border: 3px solid #24B77F; 
-  outline: none;
-  border-radius: 8px; 
-}
-
-
-
-  </style>
+   <link rel="stylesheet" href="style.css">
 </head>
   <body >
     <nav class="navbar navbar-expand-lg   bg-dark fixed-top shadows">
         <div class="container-fluid">
           <a class="navbar-brand  text-white" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
               <li class="nav-item ">
-                <a class="nav-link active  text-white" aria-current="page" href="#">Home</a>
+                <a class="nav-link active  text-white" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link  text-white" href="#">Apply Now</a>
+                <a class="nav-link  text-white" href="ApplyNow.html">Apply Now</a>
               </li>
              
               <li class="nav-item">
-                <a class="nav-link  text-white" href="#">Contact</a>
+                <a class="nav-link  text-white" href="Contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <div>
-        <img src="hero.jpg" alt="" object-fit="cover" style="width: 100%; height:auto;">
+      
+      <div class="d-flex flex-column justify-content-center align-items-center text-center text-white mt-5" style="min-height: 100vh; background: url('hero.jpg') no-repeat center center/cover;">
+        <h1 class="fw-bold display-5 mb-4">Best Rental Homes Across USA</h1>
+        <p class="fs-6 mb-4" style="color: #7F7F80;">Experience luxury living with our curated selection of high-end rental properties</p>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4 p-4 rounded" style="background-color: rgba(0, 0, 0, 0.6);">
+          <div class="d-flex align-items-center">
+            <i class="fas fa-shield-alt me-2" style="color:#8548F8; font-size: 24px;"></i>
+            <span style="font-size: 18px;">256-bit SSL Encryption</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-lock me-2" style="color:#8548F8; font-size: 24px;"></i>
+            <span style="font-size: 18px;">Secure Application</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-clock me-2" style="color:#8548F8; font-size: 24px;"></i>
+            <span style="font-size: 18px;">E-mail Process</span>
+          </div>
+        </div>
+        <button class="btn text-white mt-4 px-5 py-3 object" style="font-size: 20px;">
+          <i class="fas fa-play me-2"></i> Apply Now
+        </button>
       </div>
+      
 
-    <div style="background-color: #0F1721; ">
-        <div class="container  shadow rounded-bottom-4" style="background-color: #1A212B; color: white; ">
-            <div class="row p-4 mb-4 " >
-              <div class="col-md-12">
-                <h6 class=" mt-5">Rental Application</h6>
-                <p>Take the first step towards your dream home.</p>
+      <section class="contentbody pt-5" style="background-color: #111827;">
+        <div class="container">
+          <div class="row d-flex align-items-stretch g-4">
+            <div class="col-12 col-md-6 col-lg-4 text-center d-flex">
+              <div class="w-100 p-4 rounded lh-lg" style="border:1px solid #a3aab834;background-color: #1f2937; color: white;">
+                <i class="fas fa-rocket fa-3x mb-3" style="color: #8548F8;"></i>
+                <h5 class="fw-bold mb-2">Fast Processing</h5>
+                <p class="mb-0">Get approved within 24-48 hours</p>
               </div>
-    
-              <div class="col-md-12 mb-3">
-                <label for="moveInDate" class="form-label ">Move-in Date <span style="color: #A2A5A9;">(important)</span></label>
-                <input type="date" class="form-control " id="moveInDate" placeholder="Select date" style="padding:10px">
-              </div>
-    
-              <div class="col-md-12 mb-3">
-                <label for="applying" class="form-label ">Applying as:  <span style="color: #A2A5A9;">(I am applying as a guarantor or a tenant)</span></label>
-                <select class="form-select" aria-label="Default select example" style="padding:10px">
-                    <option selected>----------</option>
-                    <option value="1">Tenant</option>
-                    <option value="2">Guarantor</option>
-                  </select>
-    
-              </div>
-    
-              <div class="col-md-12 mb-3">
-                <label for="FirstName" class="form-label ">FirstName <span style="color: #A2A5A9;">(important)</span></label>
-                <input type="text" class="form-control " id="FirstName"  style="padding:10px">
-              </div>
-    
-              <div class="col-md-12 mb-3">
-                <label for="LastName" class="form-label ">LastName <span style="color: #A2A5A9;">(important)</span></label>
-                <input type="text" class="form-control " id="LastName" style="padding:10px">
-              </div>
-              
-              <div class="col-md-12 mb-3">
-                <label for="DateofBirth" class="form-label ">Date ofBirth <span style="color: #A2A5A9;">(important)</span></label>
-                <input type="date" class="form-control " id="DateofBirth" placeholder="Select date" style="padding:10px">
-              </div>
-    
-              <div class="col-md-12 mb-3">
-                <label for="PhoneNumber" class="form-label ">Phone Number:  <i class="fa-solid fa-flag-usa text-success"></i> <span style="color: #A2A5A9;">(+1 ***-***-****)</span></label>
-                <input type="number" class="form-control " id="PhoneNumber"  style="padding:10px;  border: 2px solid #84878D;
-      border-radius: 8px; ">
-              </div>
-    
-              <div class="col-md-12 mb-3">
-                <label for="Email" class="form-label ">Email: <span style="color: #A2A5A9;">(important)</span></label>
-                <input type="email" class="form-control " id="Email"  style="padding:10px">
-              </div>
-    
-              <div class="col-md-12 mb-3">
-                <label for="address" class="form-label ">Current Address: <span style="color: #A2A5A9;">(important)</span></label>
-                <input type="text" class="form-control " id="address"  style="padding:10px">
-              </div>
-              <div class="col-md-12 mb-3">
-                <label for="city" class="form-label ">City: <span style="color: #A2A5A9;">(important)</span></label>
-                <input type="text" class="form-control " id="city" style="padding:10px">
-              </div>
-              <div class="col-md-12 mb-3">
-                <label for="state" class="form-label ">State/Province: <span style="color: #A2A5A9;">(important)</span></label>
-                <input type="text" class="form-control " id="state" style="padding:10px">
-              </div>
-              <div class="col-md-12 mb-3">
-                <label for="postal" class="form-label ">ZIP/Postal Code: <span style="color: #A2A5A9;">(important)</span></label>
-                <input type="text" class="form-control " id="postal"  style="padding:10px">
-              </div>
-              <div class="col-md-12 mb-3">
-                <label for="country" class="form-label ">Country: <span style="color: #A2A5A9;">(important)</span></label>
-                <input type="text" class="form-control " id="country" value="United States" style="padding:10px">
-              </div>
-              <div class="col-md-12 mb-3">
-                <label for="EmployeeName" class="form-label ">Employee Name: <span style="color: #A2A5A9;">(optional)</span></label>
-                <input type="text" class="form-control " id="EmployeeName" style="padding:10px;   border: 2px solid #84878D;
-      border-radius: 8px; ">
-              </div>
-              <div class="col-md-12 mb-3">
-                <label for="job" class="form-label ">Job Title: <span style="color: #A2A5A9;">(optional)</span></label>
-                <input type="text" class="form-control " id="job" style="padding:10px;   border: 2px solid #84878D;
-      border-radius: 8px; ">
-              </div>
-              <div class="col-md-12 mb-3">
-                <label for="Monthly" class="form-label ">Monthly Income: <span style="color: #A2A5A9;">(optional)</span></label>
-                <input type="number" class="form-control " id="job" style="padding:10px">
-              </div>
-              
-            <div class="col-md-4 mb-3">
-                <i class="fa-solid fa-id-card text-success"></i> <span>Driver's License/State ID card: <span style="color: #A2A5A9;">(important)</span></span>
-                <button class="btn btn-outline-success  text-white mt-3"> <i class="fa-solid fa-upload text-success me-2"></i>Upload Front part of your ID:</button> 
             </div>
-    
-           
-    
-            <div class="col-md-12">
-                <hr>
-            </div>
-    
-            <div class="col-md-4 mb-3">
-                <i class="fa-solid fa-camera  text-success"></i> <span>Your Photo:<span style="color: #A2A5A9;">(important)</span></span>
-                <button class="btn btn-outline-success  text-white mt-3"> <i class="fa-solid fa-id-card text-success me-2"></i>Upload Front part of your ID:</button> 
-            </div>
-    
-            <div class="col-md-12">
-                <hr>
-            </div>
-    
-            <div class="col-md-12">
-                <label for="References" class="form-label">References: <span style="color: #A2A5A9;">(Optional)</span></label>
-                <textarea class="form-control" id="References" rows="3" style="border: 2px solid #84878D;
-      border-radius: 8px; "></textarea>
-            </div>
-            <div class="col-md-12">
-                <label for="Additional" class="form-label">Additional Comments: <span style="color: #A2A5A9;">(Optional)</span></label>
-                <textarea class="form-control" id="Additional" rows="3" style="border: 2px solid #84878D;
-      border-radius: 8px; "></textarea>
-            </div>
-            
-    
-              <div class="com-md-12 mt-3">
-                <button type="submit" class="btn btn-success w-100"><i class="fa-solid fa-location-arrow"></i> Submit</button>
-    
+            <div class="col-12 col-md-6 col-lg-4 text-center d-flex">
+              <div class="w-100 p-4 rounded lh-lg" style="border:1px solid #a3aab834;background-color: #1f2937; color: white;">
+                <i class="fas fa-check-circle fa-3x mb-3" style="color: #8548F8;"></i>
+                <h5 class="fw-bold mb-2">High Approval Rate</h5>
+                <p class="mb-0">98% application success rate</p>
               </div>
-            
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 text-center d-flex">
+              <div class="w-100 p-4 rounded lh-lg" style="border:1px solid #a3aab834;background-color: #1f2937; color: white;">
+                <i class="fas fa-headset fa-3x mb-3" style="color: #8548F8;"></i>
+                <h5 class="fw-bold mb-2">24/7 Support</h5>
+                <p class="mb-0">Always here to help you</p>
+              </div>
+            </div>
           </div>
 
+          <div class="application-process py-5 shadow  rounded" style="background-color: #111827; border:1px solid #a3aab81a; margin-top: 150px;">
+            <h1 class="text-center fw-bold text-white mb-5 mt-5">Application Process</h1>
+            <div class="row g-4 p-3 mb-5">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class=" custom-card p-5 rounded-4 h-100 d-flex flex-column justify-content-center text-center" style="background-color: #1f2937; color: white;">
+                  <div class="mb-3">
+                    <span class="rounded-circle d-inline-block" style="box-shadow: 0 5px 15px rgba(36,183,127,0.3); width: 50px; height: 50px; background-color: #8548F8; line-height: 50px; color: white; font-weight: bold;">1</span>
+                  </div>
+                  <h5 class="fw-bold mb-2 lh-base">Submit Application</h5>
+                  <p class="mb-0">Fill out the form with required information</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="custom-card p-5 rounded-4 h-100 d-flex flex-column justify-content-center text-center" style="background-color: #1f2937; color: white;">
+                  <div class="mb-3">
+                    <span class="rounded-circle d-inline-block " style="box-shadow: 0 5px 15px rgba(36,183,127,0.3);width: 50px; height: 50px; background-color: #8548F8; line-height: 50px; color: white; font-weight: bold;">2</span>
+                  </div>
+                  <h5 class="fw-bold mb-2 lh-base">Document Review</h5>
+                  <p class="mb-0">We verify your submitted documents</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="custom-card p-5 rounded-4 h-100 d-flex flex-column justify-content-center text-center" style="background-color: #1f2937; color: white;">
+                  <div class="mb-3">
+                    <span class="rounded-circle d-inline-block  " style="box-shadow: 0 5px 15px rgba(36,183,127,0.3);width: 50px; height: 50px; background-color: #8548F8; line-height: 50px; color: white; font-weight: bold;">3</span>
+                  </div>
+                  <h5 class="fw-bold mb-2 lh-base">Background Check</h5>
+                  <p class="mb-0">Quick verification process</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="custom-card p-5 rounded-4 h-100 d-flex flex-column justify-content-center text-center" style="background-color: #1f2937; color: white;">
+                  <div class="mb-3 ">
+                    <span class="rounded-circle d-inline-block    " style="box-shadow: 0 5px 15px rgba(36,183,127,0.3);width: 50px; height: 50px; background-color: #8548F8; line-height: 50px; color: white; font-weight: bold;">4</span>
+                  </div>
+                  <h5 class="fw-bold mb-2 lh-base">Final Approval</h5>
+                  <p class="mb-0">Get your keys and move in</p>
+                </div>
+              </div>
+            </div>
+          </div>
           
+
+
+
+          <div class="container mt-5 px-5">
+            <h5 class="text-white mb-3 fs-4">Frequently Asked Questions</h5>
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item bg-dark text-white border-0 mb-3 rounded">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold fs-5 text-white p-4 rounded  shadow-none" style="background-color: #1f2937;" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1" style="box-shadow: none; font-size: 14px;">
+                    What is the typical approval time?
+                  </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse ">
+                  <div class="accordion-body text-white rounded" style="background-color: #1f2937;">
+                    The approval time typically depends on the review process and documentation.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark text-white border-0 mb-3 rounded">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fs-5  fw-bold text-white p-4 rounded shadow-none" style="background-color: #1f2937;" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2" style="box-shadow: none; font-size: 14px;">
+                    What documents do I need?
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse">
+                  <div class="accordion-body text-white rounded " style="background-color: #1f2937;">
+                    You need to submit identity verification documents and financial records.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark text-white border-0 rounded">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed  fs-5 text-white p-4 rounded fw-bold shadow-none" style="background-color: #1f2937;" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3" style="box-shadow: none; font-size: 14px;">
+                    Is my information secure?
+                  </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse">
+                  <div class="accordion-body text-white rounded" style="background-color: #1f2937;">
+                    Yes, your information is encrypted and stored securely.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+
+
+
+
+          <div class="Whychooseus py-5  mt-4 " >
+            <h2 class="text-center fw-bold text-white mb-3">Why Choose Us</h2>
+            <p class="text-center mb-3"style="color: #7F7F80;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="row g-4 p-3">
+              <div class="col-12 col-md-6 col-lg-4 choose">
+                <div class="p-4 rounded h-100 d-flex flex-column justify-content-center text-center" style="background-color: #1f2937; color: white;">
+                    <i class="fas fa-rocket fa-3x mb-4" style="color: #8548F8;"></i>
+                  <h5 class="fw-bold mb-2">Luxury Properties</h5>
+                  <p class="mb-1">Exclusive selection of premium homes and apartments</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 choose">
+                <div class="p-4 rounded h-100 d-flex flex-column justify-content-center text-center" style="background-color: #1f2937; color: white;">
+                    <i class="fas fa-rocket fa-3x mb-4" style="color: #8548F8;"></i>
+                  <h5 class="fw-bold mb-2">Full Security</h5>
+                  <p class="mb-1">24/7 monitored properties with premium insurance</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 choose">
+                <div class="p-4 rounded h-100 d-flex flex-column justify-content-center text-center" style="background-color: #1f2937; color: white;">
+                    <i class="fas fa-rocket fa-3x mb-4" style="color: #8548F8;"></i>
+                  <h5 class="fw-bold mb-2">Premium Services</h5>
+                  <p class="mb-1">Concierge services and professional property management</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+      </section>
+      
+
     
+
+      <div class="container-fluid featured py-5" style="background-color: #1f2937;">
+        <h2 class="text-center fw-bold text-white mb-3">Featured Properties</h2>
+        <p class="text-center mb-4  " style="color: #7F7F80;">Explore our exclusive rental listings</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 d-flex">
+              <div class="card bg-dark text-white border-0 rounded-3 w-100">
+                <img src="Downtown.png" class="card-img-top rounded-top" style="border-bottom:3px solid #8548F8 !important;" alt="Downtown Penthouse">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Downtown Penthouse</h5>
+                  <p class="card-text fw-bold" style="color: #8548F8;">$4,500/month</p>
+                  <p class="card-text">3 beds - 3 baths - 2,800 sqft</p>
+                  <a href="#" class="btn text-white p-2 mt-auto w-50">Take it now!</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 d-flex">
+              <div class="card bg-dark text-white border-0 rounded-3 w-100">
+                <img src="Downtown1.png" class="card-img-top rounded-top" style="border-bottom:3px solid #8548F8 !important;" alt="Downtown Penthouse">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Downtown Penthouse</h5>
+                  <p class="card-text fw-bold" style="color: #8548F8;">$4,500/month</p>
+                  <p class="card-text">3 beds - 3 baths - 2,800 sqft</p>
+                  <a href="#" class="btn text-white p-2 mt-auto w-50">Take it now!</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 d-flex">
+              <div class="card bg-dark text-white border-0 rounded-3 w-100">
+                <img src="Downtown2.png" class="card-img-top rounded-top" style="border-bottom:3px solid #8548F8 !important;" alt="Modern Luxury Villa">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Modern Luxury Villa</h5>
+                  <p class="card-text fw-bold" style="color: #8548F8;">$6,200/month</p>
+                  <p class="card-text">4 beds - 4.5 baths - 3,500 sqft</p>
+                  <a href="#" class="btn text-white p-2 mt-auto w-50">Take it now!</a>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+      
+    <div class="contact"  style="background-color: #111827;">
+        <div class="container py-5">
+            <h2 class="text-center text-white fw-bold mb-3">Contact Us</h2>
+            <p class="text-center text-white mb-4">Get in touch with our premium support team</p>
+        
+            <div class="row">
+              <div class="col-md-5 mb-4">
+                <div class="p-4 rounded" style="background-color: #1f2937;">
+                  <h5 class="mb-4 text-white">Premium Support</h5>
+                  <p class="mb-2 text-white"><i class="fas fa-phone-alt me-2"></i> +1 (486) 678-6786</p>
+                  <p class="mb-4 text-white"><i class="fas fa-envelope me-2"></i> renthousem@gmail.com</p>
+                  <a href="#" class="me-3 text-white"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="me-3 text-white"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+                </div>
+              </div>
+              <div class="col-md-7 contact-field">
+                <div class="row mb-3">
+                  <div class="col-6">
+                    <input type="text" class="form-control  text-white" style="border: 1px solid #e4e9f554;
+      border-radius: 8px; background-color: #1f2937;" placeholder="Your Name">
+                  </div>
+                  <div class="col-6">
+                    <input type="email" class="form-control text-white" style="border: 1px solid #e4e9f554;
+      border-radius: 8px; background-color: #1f2937;" placeholder="Your Email">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control text-white" rows="4" style="border: 1px solid #e4e9f554;
+      border-radius: 8px; background-color: #1f2937;" placeholder="Your Message"></textarea>
+                </div>
+                <button class="btn text-white p-2 object">Send Message</button>
+              </div>
+            </div>
+          </div>
     </div>
 
   
